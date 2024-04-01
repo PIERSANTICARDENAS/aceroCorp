@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ConocenosSeccion = () => {
+const SeccionConocenos = () => {
     return (
         <section className="h-screen w-full">
             <div className="container px-6 py-10 mx-auto">
@@ -39,8 +39,6 @@ const ConocenosSeccion = () => {
                                 <h1 className="text-xl text-gray-700 dark:text-white">El desarrollo de emprendimientos inmobiliarios</h1>
                             </div>
                         </div>
-
-
                         <div className="md:flex md:items-start md:-mx-4">
                             <span className="inline-block p-2 text-AceroCorp bg-blue-100 rounded-xl md:mx-4 dark:text-white dark:bg-blue-500">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -50,7 +48,7 @@ const ConocenosSeccion = () => {
                             </span>
 
                             <div className="mt-1 md:mx-4 md:mt-0">
-                                <h1 className="text-xl text-gray-700 dark:text-white">La aplicación del sistema “Steel frame”</h1>
+                                <h1 className="text-xl text-gray-700 dark:text-white">La aplicación del sistema “Steel Framing”</h1>
                             </div>
                         </div>
                         <div className="mt-4">
@@ -61,11 +59,11 @@ const ConocenosSeccion = () => {
                         </div>
                     </div>
                     <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
-                        <img className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=755&q=80" alt="" />
+                        <img className="w-[26rem] h-[26rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="../imagenes/Obras/Obra_villavagon.jpg" alt="" />
                     </div>
                 </div>
             </div>
         </section>
     )
 };
-export default ConocenosSeccion;
+export default SeccionConocenos;

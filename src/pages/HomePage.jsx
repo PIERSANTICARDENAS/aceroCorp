@@ -1,10 +1,12 @@
 //Componentes
 import Header from '../components/Header';
-import Hero from '../components/Hero';
-import ConocenosSeccion from '../components/ConocenosSeccion';
-import ObrasSeccion from '../components/ObrasSeccion';
-import CatalogoSFSeccion from '../components/CatalogoSFSeccion';
-import Form from '../components/Form';
+import Hero from '../components/SeccionHero';
+import SeccionConocenos from '../components/SeccionConocenos';
+import SeccionSteelFraming from '../components/SeccionSteelFraming';
+import SeccionObras from '../components/SeccionObras';
+import SeccionConsultanos from '../components/SeccionConsultanos';
+import Footer from '../components/Footer';
+
 
 
 const HomePages = () => {
@@ -17,24 +19,29 @@ const HomePages = () => {
 			</div>
 
 			<div className="h-screen w-full bg-gray-200">
-				<ConocenosSeccion />
+				<SeccionConocenos />
 			</div>
 
-			<div className="w-full">
-				<CatalogoSFSeccion />
+			<div id="SteelFraming" className="w-full">
+				<SeccionSteelFraming />
 			</div>
 
-			<div className="h-screen w-full relative"
+			<div id="Obras" className="h-screen w-full relative"
 				style={{
 					backgroundImage: 'url(./../imagenes/SteelFraming.jpg)',
 					backgroundSize: 'cover',
 					backgroundPosition: 'center',
 				}}>
-			
-				<ObrasSeccion />
+				<SeccionObras />
 			</div>
-			<div className="w-full">
-				<Form />
+			<div id="Consultanos" className="h-screen w-full">
+				<SeccionConsultanos />
+			</div>
+			<div className="h-1 bg-gray-200 rounded overflow-hidden mt-2">
+           <div className="w-40 h-full bg-AceroCorp"></div>
+         </div>
+			<div className="h-full w-full">
+				<Footer />
 			</div>
 
 		</>

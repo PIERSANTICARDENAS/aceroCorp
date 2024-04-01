@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ObrasSeccion = () => {
+const SeccionObras = () => {
   return (
     <section className="h-screen w-full bg-black bg-opacity-50 lg:flex lg:items-center lg:justify-center">
       <div className="container px-6 py-10 mx-auto">
@@ -22,4 +22,4 @@ const ObrasSeccion = () => {
   )
 };
 
-export default ObrasSeccion;
+export default SeccionObras;

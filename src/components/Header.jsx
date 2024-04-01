@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,22 +15,22 @@ const Navbar = () => {
       <div className="max-w-[1240px] m-auto mb-4 md:mb-0 flex flex-wrap items-center">
       <a href="/#Home" className="hidden sm:flex text-AceroCorp ml-10 items-center">
               <img loading="lazy" className="w-10 h-10 items-right m-1" src="./Logo_AceroCorp.svg" />
-              <span className="ml-3 text-xl text-black"> <b>Acero</b> </span>
-              <span className="ml-3 text-xl text-AceroCorp"> <b>Corp</b> </span>
+              <span className="mr-3 text-xl text-black"> <b>Acero</b> </span>
+              <span className="text-xl text-AceroCorp"> <b>Corp</b> </span>
             </a>
       <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
         <ul className="hidden sm:flex text-AceroCorp">
           <li className="px-4 pt-2">
-            <a href="/#Amenities">Amenities</a>
+            <Link to="/#Conocenos">Conocenos</Link>
           </li>
           <li className="px-4 pt-2">
-            <a href="/#Gallery">Galería</a>
+            <a href="/#SteelFraming">Steel Framing</a>
           </li>
           <li className="px-4 pt-2">
-            <a href="/#MasterPlan">Masterplan</a>
+            <a href="/#Obras">Nuestas Obras</a>
           </li>
           <li className="px-4 pt-2">
-            <a href="/#Contacto">Contacto</a>
+            <a href="/#Consultanos">Consultanos</a>
           </li>
         </ul>
       </nav>
@@ -60,17 +61,22 @@ const Navbar = () => {
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-blue-500">
-              <a href="/#MasterPlan">Masterplan</a>
+              <a href="/#Conocenos">Conocenos</a>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-blue-500">
-              <a href="/#Gallery">Galeria</a>
+              <a href="/#SteelFraming">Steel Framing</a>
             </li>
             <li
               onClick={handleNav}
               className="p-4 text-4xl hover:text-blue-500">
-              <a href="/#Contacto">Contacto</a>
+              <a href="/#Obras">Nuestas Obras</a>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl hover:text-blue-500">
+              <a href="/#Consultanos">Consultanos</a>
             </li>
           </ul>
         </div>
