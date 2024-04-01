@@ -14,29 +14,35 @@ body {
   /* background-image: url('./../public/imagenes/backgroundImage/PapelTapiz_2_Oscuro.jpg'); */
   background-size: cover;
   background-position: center;
-  font-family: "Lora", serif;
+  font-family: "Klik Light", serif;
 }
+
+@font-face {
+  font-family: 'Klik Light';
+  src: url('/fonts/Klik-Light.otf') format('truetype');
+}
+
 
 /* -----------------------------------
            Colores 
  -----------------------------------*/
-.bg-primary {
-  color: #05c4fc;
+.bg-AceroCorp {
+  background-color: #05c4fc;
 }
-.bg-second {
-  color: #313131;
+.bg-secondary {
+  background-color: #313131;
 }
 
 .colorWhite {
-  color: white;
+  background-color: white;
 }
 
 
 /* -----------------------------------
            Textos 
  -----------------------------------*/
-.text-primary {
-  color: #05c4fc;
+.text-AceroCorp {
+  color: #0ac5f5;
 }
 
 .text-secondary {

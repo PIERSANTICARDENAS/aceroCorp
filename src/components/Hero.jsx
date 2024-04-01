@@ -9,12 +9,12 @@ const Hero = () => {
           </h1>
           <p className="mb-8 leading-relaxed">Una empresa dedicada a la industria de la construcción, tanto en Argentina como en otros países, a través de sus empresas subsidiarias.</p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Conocenos</button>
+            <button className="inline-flex text-white bg-AceroCorp border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Conocenos</button>
             <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Contacto</button>
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img className="object-cover object-center rounded" alt="hero" src="./Logo_AceroCorp.webp"/>
+          <img className="object-cover object-center rounded" alt="hero" src="./AceroCorp.svg"/>
         </div>
       </div>
   </section>

@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import swal from 'sweetalert';
 //Iconos
-
-const Form = () => {
+const Form = () =>{
 	const [nombre, setNombre] = useState('');
 	const [apellido, setApellido] = useState('');
 	const [email, setEmail] = useState('');
@@ -16,7 +15,7 @@ const Form = () => {
 	const [apellidoObligatorioError, setApellidoObligatorioError] = useState('');
 	const [codigoAreaError, setCodigoAreaError] = useState('');
 	const [telefonoError, setTelefonoError] = useState('');
-	const [telefonoObligatorioError, setTelefonoObligatorioError] = useState('');
+	const [ setTelefonoObligatorioError] = useState('');
 	const [inputValue, setInputValue] = useState('');
 	const [emailError, setEmailError] = useState('');
 
