@@ -2,9 +2,9 @@
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
-      <div className="container px-5 py-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div className="container px-5 py-5 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
 
-        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left mb-4">
+        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left mb-1">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <img src="../../Logo_AceroCorp.svg" className="w-10 h-10 text-white p-2 bg-white rounded-full">
             </img>
@@ -13,25 +13,31 @@ const Footer = () => {
 
           </a>
         </div>
-        <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div className="flex-grow flex flex-wrap lg:pl-20 -mb-10 md:mt-0 mt-5 lg:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <a href="/#Conosenos"> <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONOCENOS</h2></a>
+            <a href="/#Conocenos"> <h2 className="title-font font-medium tracking-widest text-sm mb-3  hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">CONOCENOS</h2></a>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <a href="/#SteelFraming"> <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">STEEL FRAMING</h2></a>
+            <a href="/#SteelFraming"> <h2 className="title-font font-medium tracking-widest text-sm mb-3 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">STEEL FRAMING</h2></a>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <a href="/#Obras"> <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">NUESTRAS OBRAS</h2></a>
+            <a href="/#Obras"> <h2 className="title-font font-medium tracking-widest text-sm mb-3 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">NUESTRAS OBRAS</h2></a>
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <a href="/#Consultanos"> <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CONSULTANOS</h2></a>
+            <a href="/#Consultanos"> <h2 className="title-font font-medium tracking-widest text-sm mb-3 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">CONSULTANOS</h2></a>
           </div>
         </div>
       </div>
       <div className="bg-AceroCorp">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="text-white text-sm text-center sm:text-left">© 2024 AceroCorp</p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col md:flex-row">
+        <span className="text-white inline-flex text-center md:ml-auto md:mt-0 mt-2 justify-center md:justify-start">© 2024 AceroCorp</span>
+          <div className="text-white inline-flex md:ml-auto md:mt-0 mt-2 justify-center md:justify-start">
+            <span> Dirección: Juan Florio 3549</span>
+          </div>
+          <div className="text-white inline-flex md:ml-auto md:mt-0 mt-2 justify-center md:justify-start">
+            <span> WhatsApp: +54-9-11-3685-3316</span>
+          </div>
+          <span className="inline-flex md:ml-auto md:mt-0 mt-2 justify-center md:justify-start">
             {/* Facebook */}
             <a className="text-white">
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">

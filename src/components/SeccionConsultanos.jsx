@@ -151,11 +151,11 @@ const SeccionConsultanos = () => {
 	};
 
 	return (
-		<section className="h-full w-full">
-			<div className="container px-4 py-16 mx-auto">
-				<div className="flex flex-col lg:flex-row xl:flex-row">
+		<section className="h-full w-full lg:h-screen">
+			<div className="container px-4 py-4 lg:py-16 mx-auto">
+				<div className="flex flex-col gap-4 lg:flex-row xl:flex-row">
 					<div
-						className='border-2 border-grey-900 rounded-lg overflow-hidden xs:flex-wrap sm:mr-10 sm:flex-wrap md:flex-wrap lg:flex-wrap lg:w-1/2 flex items-end justify-center relative '>
+						className='border-2 border-grey-900 rounded-lg overflow-hidden xs:flex-wrap sm:mr-10 sm:flex-wrap md:flex-wrap lg:flex-wrap lg:w-1/2 flex items-end justify-center relative w-full'>
 						<iframe
 							width='100%'
 							height='100%'
@@ -170,37 +170,34 @@ const SeccionConsultanos = () => {
 									UBICACIÓN
 								</h2>
 								<p className='my-2'>
-									Podrás encontrarnos en nuestras oficinas comerciales dentro del
-									barrio, ubicado en ruta provincial 16, entre ruta 6 y 58 - San
-									Vicente{' '}
+									aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+									aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+									aaaaaaaaa{' '}
 								</p>
 								<a
-									target='_blank'
-									href='https://earth.google.com/earth/d/125jDGICSy6Wsf_2dJc3C2PrXeB29xUnC?usp=sharing'
-									rel='noreferrer'
 									className='relative inline-block group'>
-									Nuestro Barrio desde{' '}
+									aaaaaaaaaaaaaaaaaaaa{' '}
 									<span>
-										<b>Google Earth</b>
+										<b>aaaaaaaaaaaaaaaa</b>
 									</span>
 									<span className='absolute w-full h-0.5 bg-yellow-500 bottom-0 left-0 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
 								</a>
 							</div>
 							<div className='xl:w-1/2 px-2  mt-4 lg:mt-0'>
 								<h2 className='title-font font-semibold text-gray-900 tracking-widest text-xs'>
-									HORARIOS
+									aaaaaaaaaa
 								</h2>
 								<a className='text-yellow-500 leading-relaxed'>
-									Lunes a Viernes de 09:00 a 18:00hs{' '}
+									aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa{' '}
 								</a>
 								<h2 className='title-font font-semibold text-gray-900 tracking-widest text-xs mt-4'>
-									TELÉFONO
+									aaaaaaaaaa
 								</h2>
 								<a
 									href='https://wa.link/8zprj5'
 									className='relative inline-block text-gray-500 hover:cursor-pointer group'>
 									{' '}
-									+54 9 11 5970-7620
+									aaaaaaaaaaaaaaaaaa
 									<span className='absolute inset-x-0 bottom-0 h-0.5 bg-yellow-500 origin-left transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300'></span>
 								</a>
 							</div>

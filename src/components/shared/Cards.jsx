@@ -5,9 +5,9 @@ export const Cards = ({item}) => {
     return (
         <div className="p-2 sm:mb-0 mb-2">
             <div className="rounded-lg h-60 overflow-hidden">
-            <img alt="content" className="object-cover object-center h-full w-full" src={`${item.imagen}`}/>
+            <img alt="content" className="object-cover object-center h-full w-full " src={`${item.imagen}`}/>
             </div>
-            <h2 className="text-xl font-medium title-font text-gray-900 mt-3">{item.titulo}</h2>
+            <h2 className="text-xl font-medium title-font text-black mt-3"><b>{item.titulo}</b></h2>
             <h2 className="text-md font-medium title-font text-gray-900 mt-1">{item.subTitulo}</h2>
                
             <a className="text-AceroCorp inline-flex items-center mt-3">Más detalles

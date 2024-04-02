@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 const SeccionHero = () => {
   return (
-    <section className="text-gray-600 body-font pt-10">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+    <section className="text-gray-600 body-font pt-10 overflow-hidden">
+      <div className="flex py-24 md:flex-row md:h-full md:w-full flex-col items-center justify-center relative">
+        <div className="px-5 py-5 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <motion.h1 
             initial="hidden"
             whileInView="visible"
@@ -47,9 +47,12 @@ const SeccionHero = () => {
              hidden: { opacity: 0, x: -50 },
              visible: { opacity: 1, x: 0 }
            }}
-        className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        className="lg:max-w-lg lg:w-full md:w-1/2 flex w-full justify-center items-center p-2">
           <img className="object-cover object-center rounded" alt="hero" src="./AceroCorp.svg" />
+          
         </motion.div>
+        <small className="absolute w-40 h-40 bg-AceroCorp rounded-full -top-20 -right-20"></small>
+        
       </div>
     </section>
   );

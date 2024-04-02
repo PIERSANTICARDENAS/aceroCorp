@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,31 +10,31 @@ const Navbar = () => {
 
 
   return (
-    <div className="bg-white fixed left-0 top-0 w-full z-10 ease-in h-12 mx-auto">
-      <div className="max-w-[1240px] m-auto mb-4 md:mb-0 flex flex-wrap items-center">
+    <div className="bg-white fixed left-0 top-0 w-full z-10 ease-in xs:h-12 md:h-24 lg:h-12 mx-auto">
+      <div className="max-w-[1240px] m-auto mb-4 md:mb-0 flex flex-wrap items-center justify-center">
       <a href="/#Home" className="hidden sm:flex text-AceroCorp ml-10 items-center">
               <img loading="lazy" className="w-10 h-10 items-right m-1" src="./Logo_AceroCorp.svg" />
               <span className="text-xl text-black"> <b>Acero</b> </span>
               <span className="text-xl text-AceroCorp"> <b>Corp</b> </span>
             </a>
-      <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-        <ul className="hidden sm:flex text-AceroCorp">
-          <li className="px-4 pt-2">
-            <Link to="/#Conocenos">Conocenos</Link>
+      <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center mr-2">
+        <ul className="hidden sm:flex">
+          <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
+            <a href="/#Conocenos">Conocenos</a>
           </li>
-          <li className="px-4 pt-2">
+          <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
             <a href="/#SteelFraming">Steel Framing</a>
           </li>
-          <li className="px-4 pt-2">
+          <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
             <a href="/#Obras">Nuestas Obras</a>
           </li>
-          <li className="px-4 pt-2">
+          <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
             <a href="/#Consultanos">Consultanos</a>
           </li>
         </ul>
       </nav>
         {/* Mobile Button */}
-        <div onClick={handleNav} className="block sm:hidden mt-5 z-10 justify-center">
+        <div onClick={handleNav} className="block sm:hidden mt-2 z-10 items-center justify-center">
           {nav ? (
             <AiOutlineClose size={25} className="text-AceroCorp" />
           ) : (
@@ -53,29 +52,29 @@ const Navbar = () => {
           <ul>
             <li
               onClick={handleNav}
-              className="flex justify-center">
+              className="flex p-4 justify-center">
               <a href="/#Home" >
-                <img loading="lazy" className="w-10 h-10" src="./Logo_AceroCorp.svg" />
+                <img loading="lazy" className="w-15 h-15" src="./Logo_AceroCorp.svg" />
               </a>
             </li>
             <li
-              onClick={handleNav}
-              className="p-4 text-4xl hover:text-blue-500">
+              onClick={handleNav}         
+              className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
               <a href="/#Conocenos">Conocenos</a>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-blue-500">
+              className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
               <a href="/#SteelFraming">Steel Framing</a>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-blue-500">
+              className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
               <a href="/#Obras">Nuestas Obras</a>
             </li>
             <li
               onClick={handleNav}
-              className="p-4 text-4xl hover:text-blue-500">
+              className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
               <a href="/#Consultanos">Consultanos</a>
             </li>
           </ul>

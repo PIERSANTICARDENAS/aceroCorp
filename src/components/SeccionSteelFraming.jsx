@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import { Cards } from './shared/Cards'
+import { Cards } from './shared/Cards';
+import {motion }from 'framer-motion';
+
+const MAXPropuestas=3;
 
 const SeccionSteelFraming = () => {
   const [data] = useState([
@@ -110,29 +113,56 @@ const SeccionSteelFraming = () => {
            <div className="w-40 h-full bg-AceroCorp"></div>
          </div>
          <div className="flex flex-wrap sm:flex-row flex-col py-3 mb-1">
-           <h1 className="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-1 sm:mb-0">Steel Framing</h1>
-           <p className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Propuestas para todas las necesidades</p>
+           <motion.h1 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 }
+            }}
+           className="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-1 sm:mb-0">Steel Framing</motion.h1>
+           <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            variants={{
+              hidden: { opacity: 0, y: 50 },
+              visible: { opacity: 1, y: 0 }
+            }}
+           className="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0">Propuestas para todas las necesidades</motion.p>
          </div>
        </div>
        <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
 
-         {data.slice(0, 6).map((item, index) => (
-           <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+         {data.slice(0, MAXPropuestas).map((item, index) => (
+           <motion.div
+           initial="hidden"
+           whileInView="visible"
+           viewport={{ once: true, amount: 0.5 }}
+           transition={{ delay: 0.4, duration: 0.7 }}
+           variants={{
+             hidden: { opacity: 0, x: -50 },
+             visible: { opacity: 1, x: 0 }
+           }}
+           key={index} className="w-full lg:w-1/3 xl:w-1/3">
              <Cards
                key={index}
                item={item}
              />
-           </div>
+           </motion.div>
          ))}
-         {data.length > 6 && (
+         {data.length > MAXPropuestas && (
            <div className="w-full flex justify-content-center ">
              <button onClick={toggleShowAll} className="bg-AceroCorp text-white py-2 px-4 rounded">
                {showAll ? 'Continuar recorriendo...' : 'Mostrar más propuestas'}
              </button>
            </div>
          )}
-         {showAll && data.slice(6).map((item, index) => (
-           <div key={index} className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+         {showAll && data.slice(MAXPropuestas).map((item, index) => (
+           <div key={index} className="w-full lg:w-1/3 xl:w-1/3">
              <Cards
                key={index}
                item={item}

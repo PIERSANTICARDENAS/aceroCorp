@@ -13,12 +13,13 @@ const HomePages = () => {
 
 	return (
 		<>
-			<div id="Home" className="h-screen w-full">
+			<div id="Home" className="lg:h-screen w-full h-full overflow-hidden relative">
 				<Header />
 				<Hero />
+				<small className="absolute w-20 h-20 bg-black rounded-full -bottom-10 -right-10"></small>
 			</div>
 
-			<div className="h-screen w-full bg-gray-200">
+			<div id="Conocenos" className="lg:h-screen w-full h-full overflow-hidden relative bg-gray-200">
 				<SeccionConocenos />
 			</div>
 
@@ -26,7 +27,7 @@ const HomePages = () => {
 				<SeccionSteelFraming />
 			</div>
 
-			<div id="Obras" className="h-screen w-full relative"
+			<div id="Obras" className="lg:h-screen w-full h-full overflow-hidden relative"
 				style={{
 					backgroundImage: 'url(./../imagenes/SteelFraming.jpg)',
 					backgroundSize: 'cover',
@@ -34,10 +35,10 @@ const HomePages = () => {
 				}}>
 				<SeccionObras />
 			</div>
-			<div id="Consultanos" className="h-screen w-full">
+			<div id="Consultanos" className="h-1/2 md:h-screen w-full">
 				<SeccionConsultanos />
 			</div>
-			<div className="h-1 bg-gray-200 rounded overflow-hidden mt-2">
+			<div className="h-1 bg-gray-200 rounded overflow-hidden md:mt-2">
            <div className="w-40 h-full bg-AceroCorp"></div>
          </div>
 			<div className="h-full w-full">
