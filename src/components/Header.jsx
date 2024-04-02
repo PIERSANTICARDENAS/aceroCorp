@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="max-w-[1240px] m-auto mb-4 md:mb-0 flex flex-wrap items-center">
       <a href="/#Home" className="hidden sm:flex text-AceroCorp ml-10 items-center">
               <img loading="lazy" className="w-10 h-10 items-right m-1" src="./Logo_AceroCorp.svg" />
-              <span className="mr-3 text-xl text-black"> <b>Acero</b> </span>
+              <span className="text-xl text-black"> <b>Acero</b> </span>
               <span className="text-xl text-AceroCorp"> <b>Corp</b> </span>
             </a>
       <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
