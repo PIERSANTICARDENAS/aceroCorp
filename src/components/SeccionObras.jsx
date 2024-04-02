@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import {motion } from 'framer-motion';
+
 const SeccionObras = () => {
   return (
     <section className="lg:h-screen h-full w-full bg-black bg-opacity-50 lg:flex lg:items-center lg:justify-center">

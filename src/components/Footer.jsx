@@ -6,14 +6,14 @@ const Footer = () => {
 
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left mb-1">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <img src="../../Logo_AceroCorp.svg" className="w-10 h-10 text-white p-2 bg-white rounded-full">
+            <img src="../../Logo_AceroCorp.svg" className="w-14 h-14 text-white p-2 bg-white rounded-full">
             </img>
-            <span className="text-xl text-black"> <b>Acero</b> </span>
-            <span className="text-xl text-AceroCorp"> <b>Corp</b> </span>
+            <span className="text-3xl text-black"> <b>Acero</b> </span>
+            <span className="text-3xl text-AceroCorp"> <b>Corp</b> </span>
 
           </a>
         </div>
-        <div className="flex-grow flex flex-wrap lg:pl-20 -mb-10 md:mt-0 mt-5 lg:text-left text-center">
+        {/* <div className="flex-grow flex flex-wrap lg:pl-20 -mb-10 md:mt-0 mt-5 lg:text-left text-center">
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <a href="/#Conocenos"> <h2 className="title-font font-medium tracking-widest text-sm mb-3  hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">CONOCENOS</h2></a>
           </div>
@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <a href="/#Consultanos"> <h2 className="title-font font-medium tracking-widest text-sm mb-3 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">CONSULTANOS</h2></a>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="bg-AceroCorp">
         <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col md:flex-row">
