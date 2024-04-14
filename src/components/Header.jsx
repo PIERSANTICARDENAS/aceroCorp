@@ -10,7 +10,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="bg-white fixed left-0 top-0 w-full z-10 ease-in xs:h-12 md:h-24 lg:h-12 mx-auto">
+    <div className="bg-white fixed left-0 top-0 w-full z-10 ease-in xs:h-12 md:h-24 lg:h-12 xl:h-12 mx-auto">
       <div className="max-w-[1240px] m-auto mb-4 md:mb-0 flex flex-wrap items-center justify-center">
       <a href="/#Home" className="hidden sm:flex text-AceroCorp ml-10 items-center">
               <img loading="lazy" className="w-10 h-10 items-right m-1" src="./Logo_AceroCorp.svg" />

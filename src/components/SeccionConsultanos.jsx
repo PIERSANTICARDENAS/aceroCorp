@@ -151,11 +151,11 @@ const SeccionConsultanos = () => {
 	};
 
 	return (
-		<section className="h-full w-full lg:h-screen">
-			<div className="container px-4 py-4 lg:py-16 mx-auto">
+		<section className="h-full w-full lg:h-screen xl:h-screen">
+			<div className="container py-24 mx-auto">
 				<div className="flex flex-col gap-4 lg:flex-row xl:flex-row">
 					<div
-						className='border-2 border-grey-900 rounded-lg overflow-hidden xs:flex-wrap sm:mr-10 sm:flex-wrap md:flex-wrap lg:flex-wrap lg:w-1/2 flex items-end justify-center relative w-full'>
+						className='border-2 border-grey-900 rounded-lg overflow-hidden xs:flex-wrap sm:mr-10 sm:flex-wrap md:flex-wrap lg:flex-wrap lg:w-1/2 xl:flex-wrap xl:w-1/2 flex items-end justify-center relative w-full'>
 						<iframe
 							width='100%'
 							height='100%'
@@ -164,7 +164,7 @@ const SeccionConsultanos = () => {
 							title='map'
 							src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.860254785051!2d-58.56005678923424!3d-34.68347627281279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc78957ba1d45%3A0xc880980ebc55ef98!2sAcerocorp%20srl!5e0!3m2!1ses-419!2sar!4v1711993541103!5m2!1ses-419!2sar'></iframe>
 
-						<div className='opacity-0 relative flex xs:flex-wrap sm:flex-wrap  md:flex-wrap lg:flex-wrap py-6 rounded shadow-md'>
+						<div className='opacity-0 relative flex xs:flex-wrap sm:flex-wrap  md:flex-wrap lg:flex-wrap xl:flex-wrap py-6 rounded shadow-md'>
 							<div className='xl:w-1/2 px-2 '>
 								<h2 className='title-font font-semibold text-white-900 tracking-widest text-xs'>
 									UBICACIÓN
@@ -183,7 +183,7 @@ const SeccionConsultanos = () => {
 									<span className='absolute w-full h-0.5 bg-yellow-500 bottom-0 left-0 origin-left transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100'></span>
 								</a>
 							</div>
-							<div className='xl:w-1/2 px-2  mt-4 lg:mt-0'>
+							<div className='xl:w-1/2 px-2  mt-4 lg:mt-0 xl:mt-0'>
 								<h2 className='title-font font-semibold text-gray-900 tracking-widest text-xs'>
 									aaaaaaaaaa
 								</h2>
@@ -204,7 +204,7 @@ const SeccionConsultanos = () => {
 						</div>
 					</div>
 					{/* Formulario */}
-					<div className='border-2 border-grey-900 sm:mr-1 px-2 xs:flex-wrap sm:flex-wrap md:flex-wrap md:py-8 lg:flex-wrap xl:w-1/2 flex flex-col md:ml-auto rounded items-end justify-center relative h-full w-full bg-clip-padding backdrop-filter backdrop-blur bg-opacity-20 bg-gray-300 '>
+					<div className='border-2 border-grey-900 sm:mr-1 px-2 xs:flex-wrap sm:flex-wrap md:flex-wrap md:py-8 lg:flex-wrap xl:flex-wrap xl:w-1/2 flex flex-col md:ml-auto rounded items-end justify-center relative h-full w-full bg-clip-padding backdrop-filter backdrop-blur bg-opacity-20 bg-gray-300 '>
 						<h2 className='title-font font-semibold text-AceroCorp text-md mb-3 w-full'>
 							CONSULTANOS
 						</h2>

@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 
 const SeccionHero = () => {
   return (
-    <section className="text-gray-600 body-font pt-10 overflow-hidden">
+    <section className="text-gray-600 body-font pt-10 overflow-hidden items-center justify-center">
       <div className="flex py-24 md:flex-row md:h-full md:w-full flex-col items-center justify-center relative">
-        <div className="px-5 py-5 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="px-5 py-5 lg:flex-grow xl:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <motion.h1 
             initial="hidden"
             whileInView="visible"
@@ -14,7 +14,7 @@ const SeccionHero = () => {
               hidden: { opacity: 0, y: 50 },
               visible: { opacity: 1, y: 0 }
             }}
-            className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Construcciones confiables</motion.h1>
+            className="title-font sm:text-4xl text-3xl mb-4 font-medium flex w-full items-center justify-center text-gray-900">Construcciones confiables</motion.h1>
           <motion.p
              initial="hidden"
              whileInView="visible"
@@ -24,7 +24,7 @@ const SeccionHero = () => {
                hidden: { opacity: 0, y: 50 },
                visible: { opacity: 1, y: 0 }
              }}
-          className="mb-8 leading-relaxed">Una empresa dedicada a la industria de la construcción, tanto en Argentina como en otros países, a través de sus empresas subsidiarias.</motion.p>
+          className="mb-8 leading-relaxed flex w-full items-center justify-center">Una empresa dedicada a la industria de la construcción, tanto en Argentina como en otros países, a través de sus empresas subsidiarias.</motion.p>
           <motion.div
              initial="hidden"
              whileInView="visible"
@@ -47,7 +47,7 @@ const SeccionHero = () => {
              hidden: { opacity: 0, x: -50 },
              visible: { opacity: 1, x: 0 }
            }}
-        className="lg:max-w-lg lg:w-full md:w-1/2 flex w-full justify-center items-center p-2">
+        className="lg:max-w-lg lg:w-full xl:max-w-lg xl:w-full md:w-1/2 flex w-full justify-center items-center p-2">
           <img className="object-cover object-center rounded" alt="hero" src="./AceroCorp.svg" />
           
         </motion.div>

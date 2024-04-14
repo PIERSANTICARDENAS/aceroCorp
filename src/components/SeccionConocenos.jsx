@@ -3,10 +3,10 @@ import {motion} from 'framer-motion';
 
 const SeccionConocenos = () => {
     return (
-        <section className="md:h-full lg:h-screen w-full overflow-hidden">
-            <div className="container px-6 py-10 mx-auto">
-                <div className="lg:flex lg:items-center">
-                    <div className="w-full space-y-12 lg:w-1/2">
+        <section className="md:h-full lg:h-screen xl:h-screen flex w-full items-center justify-center overflow-hidden">
+            <div className="container px-6 py-24 mx-auto">
+                <div className="lg:flex lg:items-center xl:flex xl:items-center">
+                    <div className="w-full space-y-12 lg:w-1/2 xl:w-1/2">
                         {/* Titulo */}
                         <div>
                             <motion.h1  
@@ -18,7 +18,7 @@ const SeccionConocenos = () => {
                                hidden: { opacity: 0, y: 50 },
                                visible: { opacity: 1, y: 0 }
                              }}
-                            className="text-xl font-semibold text-gray-800 lg:text-4xl dark:text-white">Focalizamos nuestro<br /> trabajo en:</motion.h1>
+                            className="text-xl font-semibold text-gray-800 lg:text-4xl xl:text-4xl dark:text-white">Focalizamos nuestro<br /> trabajo en:</motion.h1>
 
                             <div className="mt-2">
                                 <span className="inline-block w-40 h-1 rounded-full bg-AceroCorp"></span>
@@ -105,7 +105,7 @@ const SeccionConocenos = () => {
                             <span className="inline-block w-1 h-1 ml-1 rounded-full bg-AceroCorp"></span>
                         </motion.div>
                     </div>
-                    <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
+                    <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center xl:flex xl:items-center xl:w-1/2 xl:justify-center">
                         <motion.img 
                          initial="hidden"
                          whileInView="visible"

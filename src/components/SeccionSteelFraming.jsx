@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Cards } from './shared/Cards';
 import {motion }from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const MAXPropuestas=3;
 
@@ -97,16 +98,9 @@ const SeccionSteelFraming = () => {
       imagen: '/imagenes/Propuestas/Amenabar.png',
     },
   ]);
- // Estado para controlar si se muestra el resto de las tarjetas o no
- const [showAll, setShowAll] = useState(false);
-
- // Función para alternar la visualización del resto de las tarjetas
- const toggleShowAll = () => {
-   setShowAll(!showAll);
- };
 
  return (
-   <section className="text-gray-600 h-full">
+   <section className="text-gray-600 h-full flex w-full items-center justify-center">
      <div className="container px-4 py-16 mx-auto">
        <div className="flex flex-col">
          <div className="h-1 bg-gray-200 rounded overflow-hidden">
@@ -156,21 +150,11 @@ const SeccionSteelFraming = () => {
          ))}
          {data.length > MAXPropuestas && (
            <div className="w-full flex justify-content-center ">
-             <button onClick={toggleShowAll} className="bg-AceroCorp text-white py-2 px-4 rounded">
-               {showAll ? 'Continuar recorriendo...' : 'Mostrar más propuestas'}
-             </button>
+             <Link to="/PropuestasPage" className="bg-AceroCorp text-white py-2 px-4 rounded">
+              Ver más propuestas
+             </Link>
            </div>
          )}
-         {showAll && data.slice(MAXPropuestas).map((item, index) => (
-           <div key={index} className="w-full lg:w-1/3 xl:w-1/3">
-             <Cards
-               key={index}
-               item={item}
-               />
-           </div>
-         )
-         )
-         }
        </div>
      </div>
    </section>

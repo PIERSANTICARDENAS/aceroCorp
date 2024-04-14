@@ -6,6 +6,7 @@ import HomePages from "./pages/HomePage";
 import Loading from "./components/Loading";
 import { ConocenosPage } from "./pages/ConocenosPage";
 import { ObrasPage } from "./pages/ObrasPage";
+import { PropuestasPage } from "./pages/PropuestasPage";
 
 function App() {
   //Seccion Contenido
@@ -25,6 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePages />} />
         <Route path="/ConocenosPage" element={<ConocenosPage />} />
+        <Route path="/PropuestasPage" element={<PropuestasPage />} />  
         <Route path="/ObrasPage" element={<ObrasPage />} />
       </Routes>
     );
