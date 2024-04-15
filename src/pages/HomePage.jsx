@@ -13,7 +13,7 @@ const HomePages = () => {
 
 	return (
 		<>
-			<div id="Home" className="lg:h-screen xl:h-screen  w-full h-full overflow-hidden relative">
+			<div id="Home" className="lg:h-screen xl:h-screen w-full h-full overflow-hidden relative">
 				<Header />
 				<Hero />
 				<small className="absolute w-20 h-20 bg-black rounded-full -bottom-10 -right-10"></small>
