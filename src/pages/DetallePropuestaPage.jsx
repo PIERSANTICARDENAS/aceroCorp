@@ -192,7 +192,7 @@ const DetallePropuestaPage = () => {
               <div className="w-40 h-full bg-AceroCorp"></div>
             </div>
             <Link to="/PropuestasPage" className="hidden sm:flex text-AceroCorp ml-10 items-center">
-              <img loading="lazy" className="w-20 h-20 items-right m-1" src="../../public/Logo_AceroCorp.svg" />
+              {/* <img loading="lazy" className="w-20 h-20 items-right m-1" src="../../public/Logo_AceroCorp.svg" /> */}
               <span className="text-3xl text-black"> <b>Acero</b> </span>
               <span className="text-3xl text-AceroCorp"> <b>Corp</b> </span>
             </Link>
