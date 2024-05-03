@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Hero from '../components/SeccionHero';
 import SeccionConocenos from '../components/SeccionConocenos';
 import SeccionSteelFraming from '../components/SeccionSteelFraming';
+import SeccionObras from '../components/SeccionObras';
 import SeccionConsultanos from '../components/SeccionConsultanos';
 import Footer from '../components/Footer';
 
@@ -26,14 +27,14 @@ const HomePages = () => {
 				<SeccionSteelFraming propuestas={3}/>
 			</div>
 
-			{/* <div id="Obras" className="lg:h-screen xl:h-screen w-full h-full overflow-hidden relative"
+			<div id="Obras" className="lg:h-screen xl:h-screen w-full h-full overflow-hidden relative"
 				style={{
 					backgroundImage: 'url(./../imagenes/SteelFraming.jpg)',
 					backgroundSize: 'cover',
 					backgroundPosition: 'center',
 				}}>
 				<SeccionObras />
-			</div> */}
+			</div>
 			<div id="Consultanos" className="lg:h-1/2 xl:h-1/2 md:h-screen w-full">
 				<SeccionConsultanos />
 			</div>

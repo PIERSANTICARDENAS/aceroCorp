@@ -25,9 +25,9 @@ const Navbar = () => {
           <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
             <a href="/#SteelFraming">Desarrollos</a>
           </li>
-          {/* <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
+          <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
             <a href="/#Obras">Nuestas Obras</a>
-          </li> */}
+          </li>
           <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
             <a href="/#Consultanos">Consultanos</a>
           </li>
@@ -67,11 +67,11 @@ const Navbar = () => {
               className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
               <a href="/#SteelFraming">Desarrollos</a>
             </li>
-            {/* <li
+            <li
               onClick={handleNav}
               className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
               <a href="/#Obras">Nuestas Obras</a>
-            </li> */}
+            </li>
             <li
               onClick={handleNav}
               className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
