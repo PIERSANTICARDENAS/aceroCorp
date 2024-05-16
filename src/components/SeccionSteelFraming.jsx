@@ -127,7 +127,6 @@ const SeccionSteelFraming = ({propuestas}) => {
             <div
             key={index} className="w-full lg:w-1/3 xl:w-1/3 mt-3">
               <Cards
-                key={index}
                 item={item}
               />
             </div>

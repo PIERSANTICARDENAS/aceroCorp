@@ -22,12 +22,11 @@ export const Cards = ({item}) => {
 }
 
 Cards.propTypes = {
-    key:PropTypes.number.isRequired,
     item: PropTypes.shape({
         imagen: PropTypes.string.isRequired,
         titulo: PropTypes.string.isRequired,
         subTitulo: PropTypes.string.isRequired,
-        id:PropTypes.number.isRequired,
+        id: PropTypes.string.isRequired,
     }).isRequired
 };
   

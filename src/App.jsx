@@ -40,6 +40,7 @@ function App() {
         <Route path="/PropuestasPage" element={<PropuestasPage />} />  
         <Route path="/DetallePropuestaPage/:id" element={<DetallePropuestaPage/>} />  
         <Route path="/ObrasPage" element={<ObrasPage />} />
+        <Route path="*" element={<HomePages />} />
       </Routes>
     );
   }
