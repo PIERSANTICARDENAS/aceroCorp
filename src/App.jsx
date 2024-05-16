@@ -36,10 +36,10 @@ function App() {
     return (
       <Routes>
         <Route path="/" element={<HomePages />} />
-        <Route path="/ConocenosPage" element={<ConocenosPage />} />
-        <Route path="/DesarrollosPage" element={<DesarrollosPage />} />  
+        <Route path="/ConocenosPage/" element={<ConocenosPage />} />
+        <Route path="/DesarrollosPage/" element={<DesarrollosPage />} />  
         <Route path="/DetallePropuestaPage/:id" element={<DetallePropuestaPage/>} />  
-        <Route path="/ObrasPage" element={<ObrasPage />} />
+        <Route path="/ObrasPage/" element={<ObrasPage />} />
         <Route path="*" element={<HomePages />} />
       </Routes>
     );
