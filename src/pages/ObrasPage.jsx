@@ -27,26 +27,26 @@ export const ObrasPage = () => {
          </div>
        </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/casaCannin/Caning_Portada_Sol.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Frente</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6"  src="/imagenes/Obras/casaCannin/Caning_Estructura.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Estructura</h3>
 
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/casaCannin/Caning_Pileta.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Pileta</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/casaCannin/Caning_Int_1.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Interior</h3>
@@ -54,26 +54,26 @@ export const ObrasPage = () => {
             </div>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/casaCannin/Caning_Int_2.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Frente</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6"  src="/imagenes/Obras/casaCannin/Caning_Int_3.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Pileta</h3>
 
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/casaCannin/Caning_Int_4.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Galeria</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/casaCannin/Caning_Const_1.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Interior</h3>
@@ -96,26 +96,26 @@ export const ObrasPage = () => {
          </div>
        </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/CasaSanVicente/Casa_Portada.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Frente</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6"  src="/imagenes/Obras/CasaSanVicente/CasaSanV_Int_1.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Living</h3>
 
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/CasaSanVicente/Casa_SanV_Int_2.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Cocina</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/CasaSanVicente/Casa_Int_3.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Baño</h3>
@@ -123,26 +123,26 @@ export const ObrasPage = () => {
             </div>
           </div>
           <div className="flex flex-wrap -m-4">
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/CasaSanVicente/imagen1.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Frente</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6"  src="/imagenes/Obras/CasaSanVicente/imagen2.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Pileta</h3>
 
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/CasaSanVicente/Imagen3.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Galeria</h3>
               </div>
             </div>
-            <div className="xl:w-1/4 md:w-1/2 p-4">
+            <div className="w-full lg:w-1/4 xl:w-1/4 md:w-1/2 p-4">
               <div className="bg-gray-100 p-6 rounded-lg">
                 <img className="h-40 rounded w-full object-cover object-center mb-6" src="/imagenes/Obras/CasaSanVicente/imagen4.jpeg" alt="content" />
                 <h3 className="tracking-widest text-blue-500 text-xs font-medium title-font">Interior</h3>
