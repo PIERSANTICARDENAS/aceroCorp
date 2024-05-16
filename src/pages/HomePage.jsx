@@ -1,11 +1,12 @@
 //Componentes
-import Header from '../components/Header';
+
 import Hero from '../components/SeccionHero';
 import SeccionConocenos from '../components/SeccionConocenos';
-import SeccionSteelFraming from '../components/SeccionSteelFraming';
+import SeccionDesarrollos from '../components/SeccionDesarrollos';
 import SeccionObras from '../components/SeccionObras';
 import SeccionConsultanos from '../components/SeccionConsultanos';
-import Footer from '../components/Footer';
+import Header from '../components/shared/Header';
+import Footer from '../components/shared/Footer';
 
 
 
@@ -19,15 +20,15 @@ const HomePages = () => {
 				<small className="absolute w-20 h-20 bg-black rounded-full -bottom-10 -right-10"></small>
 			</div>
 
-			<div id="Conocenos" className="lg:h-screen xl:h-screen w-full h-full overflow-hidden relative bg-gray-200">
+			<div id="SeccionConocenos" className="lg:h-screen xl:h-screen w-full h-full overflow-hidden relative bg-gray-200">
 				<SeccionConocenos />
 			</div>
 
-			<div id="SteelFraming" className="lg:h-screen xl:h-screen w-full">
-				<SeccionSteelFraming propuestas={3}/>
+			<div id="SeccionDesarrollos" className="lg:h-screen xl:h-screen w-full">
+				<SeccionDesarrollos propuestas={3}/>
 			</div>
 
-			<div id="Obras" className="lg:h-screen xl:h-screen w-full h-full overflow-hidden relative"
+			<div id="SeccionObras" className="lg:h-screen xl:h-screen w-full h-full overflow-hidden relative"
 				style={{
 					backgroundImage: 'url(./../imagenes/SteelFraming.jpg)',
 					backgroundSize: 'cover',
@@ -35,7 +36,7 @@ const HomePages = () => {
 				}}>
 				<SeccionObras />
 			</div>
-			<div id="Consultanos" className="lg:h-1/2 xl:h-1/2 md:h-screen w-full">
+			<div id="SeccionConsultanos" className="lg:h-1/2 xl:h-1/2 md:h-screen w-full">
 				<SeccionConsultanos />
 			</div>
 			<div className="h-1 bg-gray-200 rounded overflow-hidden md:mt-2">

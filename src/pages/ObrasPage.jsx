@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import HeaderBasico from "../components/HeaderBasico"
+import HeaderBasico from "../components/shared/HeaderBasico"
 
 export const ObrasPage = () => {
   useEffect(() => {

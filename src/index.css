@@ -8,9 +8,6 @@ html {
 }
 
 body {
-	/* background-color: #111827; */
-	/* background-color: #111827 */
-	/* background-image: url('./../public/imagenes/backgroundImage/PapelTapiz_2_Oscuro.jpg'); */
 	background-size: cover;
 	background-position: center;
 	font-family: 'Klik Light', serif;
@@ -64,12 +61,6 @@ body {
 
 .loading {
 	z-index: 99;
-}
-
-/* carousel-custom.css */
-.carousel-image {
-	max-width: 100%;
-	height: auto;
 }
 
 .enlarged {

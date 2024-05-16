@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-const DetallePropuestaPage = () => {
+export const DetallePropuestaPage = () => {
 	useEffect(() => {
 		const resetScrollPosition = () => {
 			window.scrollTo(0, 0);
@@ -192,7 +192,7 @@ const DetallePropuestaPage = () => {
 								<div className='w-40 h-full bg-AceroCorp'></div>
 							</div>
 							<Link
-								to='/PropuestasPage'
+								to='/DesarrollosPage'
 								className='hidden sm:flex text-AceroCorp ml-10 items-center'>
 								{/* <img loading="lazy" className="w-20 h-20 items-right m-1" src="../../public/Logo_AceroCorp.svg" /> */}
 								<span className='text-3xl text-black'>
@@ -211,7 +211,7 @@ const DetallePropuestaPage = () => {
 
 							<div className='mb-1'>
 								<Link
-									to='/PropuestasPage'
+									to='/DesarrollosPage'
 									className='text-gray-900 font-medium title-font text-md volverLink bg-AceroCorp'>
 									VOLVER
 								</Link>
@@ -424,4 +424,3 @@ const DetallePropuestaPage = () => {
 	);
 };
 
-export default DetallePropuestaPage;

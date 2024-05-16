@@ -3,11 +3,11 @@ import { Routes, Route } from "react-router-dom";
 
 //Componentes propios
 import HomePages from "./pages/HomePage";
-import Loading from "./components/Loading";
+import Loading from "./components/shared/Loading";
 import { ConocenosPage } from "./pages/ConocenosPage";
 import { ObrasPage } from "./pages/ObrasPage";
-import { PropuestasPage } from "./pages/PropuestasPage";
-import DetallePropuestaPage from "./pages/DetallePropuestaPage";
+import { DesarrollosPage } from "./pages/DesarrollosPage";
+import { DetallePropuestaPage } from "./pages/DetallePropuestaPage";
 
 function App() {
   //Seccion Contenido
@@ -37,7 +37,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePages />} />
         <Route path="/ConocenosPage" element={<ConocenosPage />} />
-        <Route path="/PropuestasPage" element={<PropuestasPage />} />  
+        <Route path="/DesarrollosPage" element={<DesarrollosPage />} />  
         <Route path="/DetallePropuestaPage/:id" element={<DetallePropuestaPage/>} />  
         <Route path="/ObrasPage" element={<ObrasPage />} />
         <Route path="*" element={<HomePages />} />

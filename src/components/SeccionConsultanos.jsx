@@ -17,7 +17,7 @@ const SeccionConsultanos = () => {
 	const [apellidoObligatorioError, setApellidoObligatorioError] = useState('');
 	const [codigoAreaError, setCodigoAreaError] = useState('');
 	const [telefonoError, setTelefonoError] = useState('');
-	const [setTelefonoObligatorioError] = useState('');
+	const [telefonoObligatorioError,setTelefonoObligatorioError] = useState('');
 	const [inputValue, setInputValue] = useState('');
 	const [emailError, setEmailError] = useState('');
 
@@ -70,6 +70,7 @@ const SeccionConsultanos = () => {
 		}
 		setCodigoAreaError('');
 		setTelefonoError('');
+		setTelefonoObligatorioError('');
 		if (codigoArea !== '' || telefono !== '') {
 			if (codigoArea === '') {
 				setCodigoAreaError('Debe completar el codigo de area');
@@ -122,7 +123,7 @@ const SeccionConsultanos = () => {
 					'warning',
 				);
 			}
-			if (_telefono === undefined) {
+			if (_telefono === undefined || _telefono === '') {
 				setTelefonoObligatorioError('Debe completar el numero de telefono');
 				swal(
 					'Favor de verificar',
@@ -309,6 +310,8 @@ const SeccionConsultanos = () => {
 							<p className='w-1/4 text-left text-danger text-sm'>{telefonoError}</p>
 							<p className='w-1/4 text-left text-danger text-sm'>{inputValue}</p>
 							<p className='w-1/2 text-left text-danger text-sm'>{emailError}</p>
+							<p className='w-1/2 text-left text-danger text-sm'>{telefonoObligatorioError}</p>
+
 						</div>
 
 						<div className='relative mb-2 flex flex-wrap flex-grow w-full'>

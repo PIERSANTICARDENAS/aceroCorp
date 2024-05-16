@@ -138,7 +138,7 @@ const SeccionConocenos = () => {
                            hidden: { opacity: 0, x: -50 },
                            visible: { opacity: 1,x: 0 }
                          }}    
-                        className="w-[26rem] h-[26rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="../imagenes/Obras/SeccionConocenos.jpg" alt="" />
+                        className="w-[26rem] h-[26rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full" src="../imagenes/SeccionConocenos.jpg" alt="" />
                     </div>
                 </div>
             </div>
