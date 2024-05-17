@@ -42,7 +42,7 @@ const SeccionHero = () => {
 						}}
 						className='flex items-center justify-center w-full'>
 						<a
-							href='/#Consultanos'
+							href='/#SeccionConsultanos'
 							className='text-white bg-AceroCorp border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg'>
 							Consultanos
 						</a>

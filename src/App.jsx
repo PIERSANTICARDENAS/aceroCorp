@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Componentes propios
 import HomePages from "./pages/HomePage";
@@ -28,20 +28,20 @@ function App() {
     }, 2000);
   }, []);
 
-  
-
   if (loading) {
     return <Loading />;
   } else {
     return (
-      <Routes>
-        <Route path="/" element={<HomePages />} />
-        <Route path="/ConocenosPage/" element={<ConocenosPage />} />
-        <Route path="/DesarrollosPage/" element={<DesarrollosPage />} />  
-        <Route path="/DetallePropuestaPage/:id" element={<DetallePropuestaPage/>} />  
-        <Route path="/ObrasPage/" element={<ObrasPage />} />
-        <Route path="*" element={<HomePages />} />
-      </Routes>
+      <Router>
+        <Switch>
+          <Route exact path="/" component={HomePages} />
+          <Route path="/ConocenosPage" component={ConocenosPage} />
+          <Route path="/DesarrollosPage" component={DesarrollosPage} />
+          <Route path="/DetallePropuestaPage/:id" component={DetallePropuestaPage} />
+          <Route path="/ObrasPage" component={ObrasPage} />
+          <Route path="*" component={HomePages} />
+        </Switch>
+      </Router>
     );
   }
 }
