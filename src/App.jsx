@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, HashRouter } from "react-router-dom";
 
 //Componentes propios
 import HomePages from "./pages/HomePage";
@@ -32,7 +32,7 @@ function App() {
     return <Loading />;
   } else {
     return (
-      <Router>
+      <HashRouter>
         <Switch>
           <Route exact path="/" component={HomePages} />
           <Route path="/ConocenosPage" component={ConocenosPage} />
@@ -41,7 +41,7 @@ function App() {
           <Route path="/ObrasPage" component={ObrasPage} />
           <Route path="*" component={HomePages} />
         </Switch>
-      </Router>
+      </HashRouter>
     );
   }
 }
