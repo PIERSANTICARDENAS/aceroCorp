@@ -26,7 +26,7 @@ const Navbar = () => {
             <a href="/#SeccionDesarrollos">Desarrollos</a>
           </li>
           <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
-            <a href="/#SeccionObras">Nuestas Obras</a>
+            <a href="/#SeccionObras">Nuestras Obras</a>
           </li>
           <li className="px-4 hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
             <a href="/#SeccionConsultanos">Consultanos</a>
@@ -70,7 +70,7 @@ const Navbar = () => {
             <li
               onClick={handleNav}
               className="p-4 text-2xl hover:text-blue-400 transition-colors duration-300 border-b-2 hover:border-blue-400 transition-colors duration-300">
-              <a href="/#SeccionObras">Nuestas Obras</a>
+              <a href="/#SeccionObras">Nuestras Obras</a>
             </li>
             <li
               onClick={handleNav}

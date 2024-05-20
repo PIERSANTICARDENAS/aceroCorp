@@ -35,7 +35,7 @@ const Footer = () => {
             <span> Dirección: Juan Florio 3549</span>
           </div>
           <div className="text-white inline-flex md:ml-auto md:mt-0 mt-2 justify-center md:justify-start">
-            <span> WhatsApp: +54-9-11-3685-3316</span>
+            <span> WhatsApp: +54-9-11-7888-8881</span>
           </div>
           <span className="inline-flex md:ml-auto md:mt-0 mt-2 justify-center md:justify-start">
             {/* Facebook */}
@@ -52,10 +52,9 @@ const Footer = () => {
               </svg>
             </a>
             {/* Email */}
-            <a className="ml-3 text-white">
+            <a className="ml-3 text-white" href="mailto:info@acerocorp.com.ar">
               <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
               <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-
               </svg>
             </a>
           </span>
