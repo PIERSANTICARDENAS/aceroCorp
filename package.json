@@ -17,6 +17,7 @@
     "bootstrap": "^5.3.2",
     "crypto-js": "^4.2.0",
     "docxtemplater": "^3.42.4",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.0.24",
     "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",

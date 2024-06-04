@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import swal from 'sweetalert';
+import emailjs from 'emailjs-com';
 //Iconos
 
 const SeccionConsultanos = () => {
@@ -17,13 +18,13 @@ const SeccionConsultanos = () => {
 	const [apellidoObligatorioError, setApellidoObligatorioError] = useState('');
 	const [codigoAreaError, setCodigoAreaError] = useState('');
 	const [telefonoError, setTelefonoError] = useState('');
-	const [telefonoObligatorioError,setTelefonoObligatorioError] = useState('');
+	const [telefonoObligatorioError, setTelefonoObligatorioError] = useState('');
 	const [inputValue, setInputValue] = useState('');
 	const [emailError, setEmailError] = useState('');
 
 	const preFijoTelefono = '549';
 	// Fin declaracion de constantes
-	
+
 	const resetFormulario = () => {
 		setNombre('');
 		setApellido('');
@@ -134,7 +135,7 @@ const SeccionConsultanos = () => {
 		} else {
 			enviarFormulario(_telefono);
 
-			swal('Consulta enviada con exito', 'Un asesor lo contactará', 'success');
+			
 
 			resetFormulario();
 		}
@@ -148,8 +149,21 @@ const SeccionConsultanos = () => {
 			email,
 			mensaje,
 		};
+		
+		emailjs.send('default_service', 'template_treaifp', {
+			nombre: nombre,
+			apellido: apellido,
+			codigo_area: codigoArea,
+			telefono: _telefono,
+			email: email,
+			mensaje: mensaje}, 'eRo0pkOX93XL1Br5x').then(() => {
+				swal('Consulta enviada con exito', 'Un asesor lo contactará', 'success');
+			}, (error) => {
+			console.log('Error al enviar el mensaje, intenta nuevamente', error.text);});
+
 		return formularioCompleto;
 	};
+
 
 	return (
 		<section className="h-full w-full lg:h-screen xl:h-screen">
@@ -205,7 +219,7 @@ const SeccionConsultanos = () => {
 						</div>
 					</div>
 					{/* Formulario */}
-					<div className='border-2 border-grey-900 sm:mr-1 px-2 xs:flex-wrap sm:flex-wrap md:flex-wrap md:py-8 lg:flex-wrap xl:flex-wrap xl:w-1/2 flex flex-col md:ml-auto rounded items-end justify-center relative h-full w-full bg-clip-padding backdrop-filter backdrop-blur bg-opacity-20 bg-gray-300 '>
+					<div id="form" className='border-2 border-grey-900 sm:mr-1 px-2 xs:flex-wrap sm:flex-wrap md:flex-wrap md:py-8 lg:flex-wrap xl:flex-wrap xl:w-1/2 flex flex-col md:ml-auto rounded items-end justify-center relative h-full w-full bg-clip-padding backdrop-filter backdrop-blur bg-opacity-20 bg-gray-300 '>
 						<h2 className='title-font font-semibold text-AceroCorp text-md mb-3 w-full'>
 							CONSULTANOS
 						</h2>
@@ -328,6 +342,8 @@ const SeccionConsultanos = () => {
 								className='w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 h-10 text-base outline-none text-gray-700 py-1 px-2  resize-none leading-6 transition-colors duration-200 ease-in-out'></textarea>
 						</div>
 						<button
+							id="button"
+							type="submit"
 							onClick={() => hamdleSubmit()}
 							className='text-white bg-AceroCorp border-0 py-1 px-2 focus:outline-none hover:bg-blue-600 rounded text-lg'>
 							Enviar consulta
