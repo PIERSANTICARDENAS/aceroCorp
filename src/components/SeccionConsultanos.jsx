@@ -150,7 +150,7 @@ const SeccionConsultanos = () => {
 			mensaje,
 		};
 		
-		emailjs.send('default_service', 'template_treaifp', {
+		emailjs.send('service_by4qnoy', 'template_treaifp', {
 			nombre: nombre,
 			apellido: apellido,
 			codigo_area: codigoArea,
